@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
+
+.main_heading {
+  font-family: "fira", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgb(255, 20, 20);
+}
+
+.name {
+  background-color: #fff4f6;
+}
+
+.Category_section {
+  background-image: url("category.jpg");
+  background-size: cover;
+}
+
+.overlap-container {
+  position: relative;
+}
+
+.overlap-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.cont2, .copyright {
+  background-color: rgb(0, 7, 25);
+}
+
+.box {
+  background-image: url("freelancing.jpg");
+}
+
+.box2 {
+  background-image: url("blur.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
