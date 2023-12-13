@@ -52,4 +52,12 @@ h6 {
 .box2 {
   background-image: url("blur.jpg");
   background-size: cover;
+}
+
+.responsive-image {
+  width: 90vh;
+  /* Make the image fill its container */
+  /* Maintain the image's aspect ratio */
+  position: relative;
+  top: 6rem;
 }/*# sourceMappingURL=style.css.map */
