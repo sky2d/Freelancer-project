@@ -27,11 +27,50 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Kalnia:wght@400;500&family=Lato&family=Lora:ital,wght@0,600;1,500&family=Open+Sans&family=Oswald&family=Poppins:wght@500&family=Ubuntu&family=Varela+Round&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <style>
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        h6 {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 100;
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+
+
+        }
+        @media (max-width :998px) {
+    .cont{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .image{
+        border-radius: 200px;
+        background-size:cover ;
+    }
+
+    .box-1{
+        padding: 13vh;
+    }
+    .card-cont{
+        margin-left: 20vh;
+    }
+}
+    </style>
 </head>
 
 <body style="background-color: #fff4f6;">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <button class="btn btn-danger"> Logo</button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -60,13 +99,15 @@
     <!-- NavBAr Created -->
 
     <!-- Header Start -->
-    <div class="container my-3 rounded-5 bg-body-tertiary d-flex justify-content-between">
-        <div class="box1 mt-4 mx-1 w-75 row">
-            <div class="col">
+    <div class="container cont my-3 rounded-5 bg-body-tertiary d-flex justify-content-between w-100">
+        <div class=" mt-4 mx-1 ">
+            <div class="">
                 <div class="d-flex justify-content-start w-70 gap-5">
-                    <img src="./Assets/pic2.jpg" class=" rounded-circle h-25 w-25" alt="...">
+                    <div class="image" style="background-image: url(./Assets/pic2.jpg);
+                    background-size: cover;
+                     width: 20%;height: 7rem;border-radius:15vmin ;"></div>
                     <div class="w-100 ">
-                        <h1>Freelancer Name</h1>
+                        <h1 style="font-family: 'Lora', serif;">Freelancer Name</h1>
                         <h6>⭐ 4.9/5.0 (120)</h6>
                         <p>United States | English</p>
                     </div>
@@ -83,62 +124,56 @@
                         ratione necessitatibus
                         quisquam, nulla et hic deleniti!</p>
                     <p>
-                    <h4>Skills</h4>
+
                     </p>
-                    <div class="d-flex justify-content-start gap-3 mb-2 mt-1">
-                        <button class="btn btn-danger px-3" type="submit">Web Devlopment</button>
-                        <button class="btn btn-danger px-3" type="submit">AWS</button>
-                        <button class="btn btn-danger px-3" type="submit">HTML</button>
-                        <button class="btn btn-danger px-3" type="submit">CSS</button>
-                        <button class="btn btn-danger px-3" type="submit">PHP</button>
-                        <button class="btn btn-danger px-3" type="submit">Javascript</button>
-                        <button class="btn btn-danger px-3" type="submit">JQuery</button>
-                        <button class="btn btn-danger px-3" type="submit">WordPress</button>
+                    <div class=" ">
+                        <h4>Skills</h4>
+                        <div class="d-flex justify-content-start gap-3 mt-3 p-2 flex-wrap">
+                            <button class="btn btn-danger" type="submit"> Devlopment</button>
+                            <button class="btn btn-danger" type="submit">aws</button>
+                            <button class="btn btn-danger" type="submit">html</button>
+                            <button class="btn btn-danger" type="submit">css</button>
+                            <button class="btn btn-danger" type="submit">php</button>
+                            <button class="btn btn-danger" type="submit">java</button>
+                            <button class="btn btn-danger" type="submit">Jquery</button>
+                            <button class="btn btn-danger" type="submit">wordpress</button>
+                        </div>
                     </div>
                 </div>
-                <div class="list mt-4">
+                <div class="container card-cont mt-5">
                     <div class="row">
-                        <div class="col">
-                            <div class="card" style="width: 12rem;">
-                                <img src="..." class="card-img-top" alt="...">
+                        <div class="col-md-3 mb-5 ">
+                            <div class="card bg-light shadow-lg p-3 rounded" style="width: 11rem; height: 11rem;">
+                                <img src="./Assets/cardimage.avif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
+                                    <h6 class="card-text">Hello I Am A freelancer</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card" style="width: 12rem;">
-                                <img src="..." class="card-img-top" alt="...">
+
+                        <div class="col-md-3 mb-4 ">
+                            <div class="card bg-light shadow-lg p-3 rounded" style="width: 11rem; height: 11rem;">
+                                <img src="./Assets/cardimage.avif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
+                                    <h6 class="card-text">Hello I Am A freelancer</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card" style="width: 12rem;">
-                                <img src="..." class="card-img-top" alt="...">
+
+                        <div class="col-md-3 mb-4 ">
+                            <div class="card bg-light shadow-lg p-3 rounded" style="width: 11rem; height: 11rem;">
+                                <img src="./Assets/cardimage.avif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
+                                    <h6 class="card-text">Hello I Am A freelancer</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card" style="width: 12rem;">
-                                <img src="..." class="card-img-top" alt="...">
+
+                        <div class="col-md-3 mb-4">
+                            <div class="card bg-light shadow-lg p-3 rounded" style="width: 11rem; height: 11rem;">
+                                <img src="./Assets/cardimage.avif" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's
-                                        content.</p>
+                                    <h6 class="card-text">Hello I Am A freelancer</h6>
                                 </div>
                             </div>
                         </div>
@@ -148,50 +183,51 @@
         </div>
 
         <!-- Right section -->
-        <div class="box-1 mx-2">
+        <div class="box-1 mx-3   ">
             <div class="row ">
                 <div class="col">
                     <div class="mt-5 ">
                         <h3 class="fw-bold">$19/Hour</h3>
                         <p>Average Response Time : 1 Hour</p>
 
-                        <div class="card text-center mt-5 mb-2 ">
-                            <div class="card-body">
-                                <h3 class="card-title">Free Lancer Name</h3>
-                                <p class="card-text"><img src="#"> Online | Today, 10:45 AM</p>
-                                <a href="#" class="btn btn-danger px-5">Contact Me</a>
+                        <div class="card text-center mt-5 mb-2 bg-danger">
+                            <div class="card-body  text-light">
+                                <h3 style=" font-family: 'Rubik', sans-serif;" class="card-title">Free Lancer Name</h3>
+                                <p class="card-text"><img src="./Assets/circle.png"> Online | Today, 10:45 AM</p>
+                                <a href="#" class="btn bg-light text-danger fw-medium px-5">Contact Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="row ">
                 <div class="col">
-                    <div class="card mt-3">
-                        <div class="card-body">
+                    <div style="width: 20rem;" class="card mt-5 mb-2 bg-danger text-light">
+                        <div class="card-body ">
                             <h3 class="card-title">Work History</h3>
-                            <p class="card-text fw-bold">Website Development</p>
-                            <p class="card-text ">
-                                <!-- star images  -->
-                            </p>
+                            <p class="card-text fw-bold">Website Development <br><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i></p>
+
                             <p class="card-text">Thank You For Your Help - Customer</p>
 
-                            <p class="card-text fw-bold">Website Development</p>
-                            <p class="card-text">
-                                <!-- star images  -->
-                            </p>
+                            <p class="card-text fw-bold">Website Development <br><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i></p>
+
                             <p class="card-text">Thank You For Your Help - Customer</p>
 
-                            <p class="card-text fw-bold">Website Development</p>
-                            <p class="card-text">
-                                <!-- star images  -->
-                            </p>
+                            <p class="card-text fw-bold">Website Development <br><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i></p>
                             <p class="card-text">Thank You For Your Help - Customer</p>
 
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
@@ -217,7 +253,7 @@
                         <h6>Backend Development</h6>
                         <h6>Software Development</h6>
                         <h6>Web Development</h6>
-    
+
                     </div>
                     <div class="col ">
                         <h4>About Us</h4>
@@ -234,7 +270,7 @@
                 <h3>Contact</h3>
                 <p>Support@perfektly.com</p>
             </div>
-    
+
         </div>
         <hr>
         <div class="copyright  p-1">

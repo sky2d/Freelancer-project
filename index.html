@@ -39,61 +39,49 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="btn btn-danger"> Logo</button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Find Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Find Freelancer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex gap-3" role="search">
-                        <button class="btn btn-danger  " type="submit">Login</button>
-                        <button class="btn btn-danger" type="submit">Logout</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="background ">
-        <div class="container  ">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 p-5 my-3 h-100">
-                    <h1 class="main_heading ">Find Talent & Hire Freelancer</h1>
-                    <div class="container mt-3 ">
-                        <div class="input-group ">
-                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
-                                aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-danger" type="button">
-                                    <i class="bi bi-search"></i> <!-- Font Awesome search icon -->
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <h6 class="fw-light my-3  fs-6">Navigate a diverse marketplace to find your ideal talent match with
-                        perfektly. </h6>
-                </div>
-                <div class="col-lg-6 col-md-12 p-5 my-5 mb-5 position-absolute  bottom-0 end-0"
-                    >
-                    <img class="img-fluid" src="mainPic.png" style=" width: 500px; height: 300px; position:relative ;bottom: 4.2rem; "
-                        alt="...">
-                </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="btn btn-danger"> Logo</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Find Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find Freelancer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex gap-3" role="search">
+                    <button class="btn btn-danger  " type="submit">Login</button>
+                    <button class="btn btn-danger" type="submit">Logout</button>
+                </form>
             </div>
         </div>
+    </nav>
+
+    <!-- Header Start -->
+<div class="background">
+    <div class=" d-flex justify-content-between container">
+        <div class="left w-75 m-5">
+            <h1 class="main_heading">Find Talent & Hire </h1>
+            <h1 class="main_heading">Freelancer</h1>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+            <p style="font-family: 'Rubik', sans-serif; color:  rgb(255, 20, 20);;" class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eos explicabo tempora
+                </p>
+        </div>
+        <div class="right img-fluid d-flex align-items-end" ><img class="h-75 w-100 mx-auto" src="mainPic.png" alt=""> </div>
+    </div>
     </div>
 
     <div class="container my-4">
@@ -106,7 +94,9 @@
 
                     <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
                         <div class="card shadow p-1 mb-5 bg-body-tertiary rounded">
-                            <img src="pic1.jpg" class="card-img-top" alt="...">
+                            <div>
+                                <img src="pic1.jpg" class="card-img-top" alt="...">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Freelancer Name</h5>
                                 <p class="card-text"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -670,7 +660,7 @@
         <button type="button" class="btn btn-danger rounded-2">Register Naw</button>
     </div>
 
-  <!-- footer  -->
+    <!-- footer  -->
 
     <div class="cont2 text-light fs-6 fw-light bg-black">
         <div class="conatiner p-5  d-flex justify-content-between ">
