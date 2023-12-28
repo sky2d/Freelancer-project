@@ -1,70 +1,216 @@
-
- body{
+body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100vw;
 
 }
-h2{
-font-family: 'Poppins', sans-serif;
-font-weight:600;
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
 }
 
-h6{
+h6 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
-    
+
+
+}
+
+.main_heading {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 20, 20);
 }
 
 
-.main_heading{
-font-family: 'Lora', serif;
-font-size: 3rem;
-font-weight: 900;
-color: rgb(255, 20, 20);
+
+.background {
+    background-color: #fff4f6;
 }
 
-
-
-.background{
-    background-color:#fff4f6;
-}
-
-.Category_section{
+.Category_section {
     background-image: url("category.jpg");
     background-size: cover;
 }
 
-.overlap-container {
-    position: relative;
-}
-
-.overlap-image {
+.responsive_1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-
-.box {
-    background-image: url('freelancing.jpg');
-
-
-}
-
-.box2 {
+    border: 2px rgb(241, 27, 23) solid;
+    border-radius: 20px;
+    width: 200px;
+    aspect-ratio: 1;
     background-image: url('blur.jpg');
     background-size: cover;
-    
+    right: -80px;
+    top: 80px;
 }
 
-.responsive-image {
-    width: 90vh;
-    /* Make the image fill its container */
-    // height: auto;
-    /* Maintain the image's aspect ratio */ 
-    position: relative;
-    top: 6rem;
+.responsive_2 {
+    position: absolute;
+    border: 3px rgb(237, 230, 230) solid;
+    border-radius: 20px;
+    width: 200px;
+    aspect-ratio: 1;
+    z-index: 100;
+    background-image: url('freelancing.jpg');
+    background-size: cover;
 }
 
+.no-w {
+    width: 50%;
+}
+
+//  Media query start
+
+@media (max-width: 450px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    h6 {
+        font-size: 9px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .left {
+        padding: 14px 1px 20px 20px
+    }
+
+    .m-5 {
+        margin: 1rem !important;
+    }
+
+
+    .responsive_image {
+        display: none;
+    }
+
+    .main_heading {
+        font-size: 20px;
+    }
+
+    .mt-2 {
+        font-size: 10px;
+    }
+
+    .main_box {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(255, 244, 246);
+        height: 190px;
+        padding-top: 20px;
+    }
+
+    .box1 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-image: url(freelancing.jpg);
+        border: 3px rgb(237, 230, 230) solid;
+        border-radius: 10px;
+        z-index: 100;
+        aspect-ratio: 1;
+        left: -93px;
+        background-size: cover;
+
+
+    }
+
+    .box2 {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-image: url(blur.jpg);
+        border: 2px rgb(241, 27, 23) solid;
+        border-radius: 10px;
+        top: 45px;
+        left: 54px;
+        background-size: cover;
+
+
+    }
+
+    .no-w {
+        width: 100%;
+    }
+
+    .skill_section {
+        display: none;
+    }
+
+    .row-skils {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        font-weight: 2px;
+        padding-left: 10px;
+    }
+
+    .cont2 {
+        display: none;
+    }
+
+    .scroller-window {
+        display: none;
+    }
+
+    .scrolling-wrapper {
+        overflow-x: auto;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .card-block {
+        height: 250px;
+        border: none;
+        background-position: center;
+        background-size: cover;
+
+        transition: all 0.2s ease-in-out !important;
+
+        &:hover {
+            transform: translateY(-5px);
+
+        }
+    }
+
+}
+
+@media (min-width: 450px) {
+    .skill_section2 {
+        display: none;
+    }
+
+    .mobiel-footer {
+        display: none;
+    }
+
+    .scroller-mobiel {
+        display: none;
+    }
+}
